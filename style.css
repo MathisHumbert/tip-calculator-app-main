@@ -1,0 +1,94 @@
+/* global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(185, 41%, 84%);
+  font-family: 'Space Mono', monospace;
+}
+main {
+  min-height: 100vh;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: hsl(183, 100%, 15%);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/*
+ container
+*/
+.container {
+  background: #fff;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* calculator */
+.calculator {
+  display: grid;
+  gap: 2rem;
+}
+
+.calculator-item h2 {
+  font-size: 14px;
+  color: hsl(186, 14%, 43%);
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.input img {
+  position: absolute;
+  left: 1rem;
+}
+input {
+  padding: 7px;
+  text-align: right;
+  background: transparent;
+  border: none;
+  width: 100%;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  font-size: 24px;
+  font-family: 'Space Mono', monospace;
+}
+input::placeholder {
+  color: hsl(184, 14%, 56%);
+  font-family: 'Space Mono', monospace;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.tip-btn {
+  background: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Space Mono', monospace;
+  cursor: pointer;
+}
+.custom-btn {
+  background: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+}
