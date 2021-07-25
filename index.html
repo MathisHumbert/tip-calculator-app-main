@@ -35,30 +35,36 @@
             <div class="calculator-item bill">
               <h2>Bill</h2>
 
-              <div class="input">
+              <div class="input bill">
                 <img src="./images/icon-dollar.svg" alt="" />
-                <input type="text" placeholder="0" class="bill-input" />
+                <input type="text" placeholder="0" class="bill-input zero" />
               </div>
             </div>
             <!-- select tip -->
             <div class="calculator-item select-tip">
               <h2>Select Tip %</h2>
               <div class="btn-container">
-                <button class="tip-btn">5%</button>
-                <button class="tip-btn">10%</button>
-                <button class="tip-btn">15%</button>
-                <button class="tip-btn">25%</button>
-                <button class="tip-btn">50%</button>
-                <button class="tip-btn custom-btn">Custom</button>
+                <button class="tip-btn five">5%</button>
+                <button class="tip-btn ten">10%</button>
+                <button class="tip-btn fifteen">15%</button>
+                <button class="tip-btn twentyfive">25%</button>
+                <button class="tip-btn fifty">50%</button>
+                <button class="tip-btn custom-btn">
+                  <input
+                    type="text"
+                    class="custom-input"
+                    placeholder="Custom"
+                  />
+                </button>
               </div>
             </div>
             <!-- number of people -->
             <div class="calculator-item people">
-              <h2>Number of People</h2>
-              <span class="input">
+              <h2>Number of People <span>Can't be zero</span></h2>
+              <div class="input">
                 <img src="./images/icon-person.svg" alt="" />
                 <input type="text" placeholder="0" class="people-input" />
-              </span>
+              </div>
             </div>
           </div>
 
@@ -71,7 +77,7 @@
                   Tip Amount <br />
                   <span>/ person</span>
                 </h2>
-                <h1 class="amount-resut">$0.00</h1>
+                <h1 class="amount-result">$0.00</h1>
               </div>
               <!-- total -->
               <div class="result-display total">
@@ -79,7 +85,7 @@
                   Total <br />
                   <span>/ person</span>
                 </h2>
-                <h1 class="total-resut">$0.00</h1>
+                <h1 class="total-result">$0.00</h1>
               </div>
             </div>
             <button class="reset">reset</button>
