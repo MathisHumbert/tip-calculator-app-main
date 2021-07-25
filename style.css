@@ -30,6 +30,8 @@ main {
   width: 100%;
   padding: 2rem;
   border-radius: 1rem;
+  display: grid;
+  gap: 2rem;
 }
 
 /* calculator */
@@ -91,4 +93,86 @@ input::placeholder {
 .custom-btn {
   background: hsl(189, 41%, 97%);
   color: hsl(183, 100%, 15%);
+}
+
+/* 
+result
+*/
+.result {
+  background: hsl(183, 100%, 15%);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 2rem;
+}
+.result h1 {
+  font-size: 24px;
+  color: hsl(172, 67%, 45%);
+}
+.result h2 {
+  font-size: 14px;
+  color: hsl(185, 41%, 84%);
+}
+.result span {
+  color: hsl(184, 14%, 56%);
+}
+.result-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reset {
+  background: hsl(172, 67%, 45%);
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  font-size: 24px;
+  font-family: 'Space Mono', monospace;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.tip-amount {
+  margin-bottom: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.attribution a {
+  color: hsl(183, 100%, 15%);
+}
+@media screen and (min-width: 1080px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  main {
+    max-width: 1440px;
+    display: grid;
+    align-items: center;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .tip-amount {
+    margin-bottom: 4rem;
+  }
+  .result {
+    padding: 2rem;
+  }
+  .result h1 {
+    font-size: 2.5rem;
+    color: hsl(172, 67%, 45%);
+  }
+  .result h2 {
+    font-size: 20px;
+    color: hsl(185, 41%, 84%);
+  }
 }
